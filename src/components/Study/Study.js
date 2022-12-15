@@ -9,7 +9,7 @@ import List from "./List";
 
 const Study = () => {
   return (
-    <div>
+    <div >
       <Header />
       <body>
         <Video />

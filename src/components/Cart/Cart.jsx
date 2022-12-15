@@ -9,8 +9,9 @@ const Cart = (props) => {
   return (
     <div>
       <Header />
-      <body>
-        <h1 className="font-bold text-2xl mb-10 text-left m-5">
+      <body className="mx-20">
+        <div className="w-32 flex-initial "></div>
+        <h1 className="font-bold text-2xl mb-10 text-left m-5 text-primary">
           Shopping Cart
         </h1>
         <div className="flex text-left m-5 flex-wrap">

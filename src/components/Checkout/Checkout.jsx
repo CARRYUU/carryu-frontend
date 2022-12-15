@@ -1,26 +1,35 @@
 import React from "react";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import ShopList from "../Cart/ShopList";
+import CheckoutList from "./CheckoutList";
 import TotalPrice from "../Cart/TotalPrice";
+import ShopList from "../Cart/ShopList";
+import Payment from "./Payment";
+import CheckoutPrice from "./CheckoutPrice";
 
 const Checkout = (props) => {
   return (
-    <div>
+    <div >
       <Header />
-      <body className="flex ">
-        <div className="w-32 flex-initial "></div>
-        <div className=" flex m-0  text-left flex-wrap">
-          <div className="flex-col">
-            <h1 className="font-bold text-3xl mb-10  m-5">Checkout</h1>
+      <body className="mx-20 bg-slate-50 rounded-md pt-2">
+        <h1 className="font-bold text-2xl mb-10 text-left m-5 text-primary">
+          Checkout
+        </h1>
+        <div className="flex text-left m-5 flex-wrap">
+          <div id="ShopList" className="flex-col flex-1 text-left ">
             <div>
-              <h3 className="font-bold text-xl m-5">Payment method</h3>
-              <></>
+              <Payment />
             </div>
-            <h3 className="font-bold text-xl m-5">Order detail</h3>
-            <hr className="mx-5 my-4 h-0.5 bg-gray-100" />
-
-            <ShopList
+            <h3 className="font-bold text-xl ">Order detail</h3>
+            <hr className="mx-10 my-4 h-0.5 bg-gray-100" />
+            <CheckoutList
+              imageUri={require("../../image/3.JPG")}
+              title="陽明山大爆走"
+              badge1="爬起來"
+              badge2="耶~我誰"
+              price="50000"
+            />
+            <CheckoutList
               imageUri={require("../../image/4.JPG")}
               title="山岳攝影"
               badge1="相機"
@@ -28,9 +37,7 @@ const Checkout = (props) => {
               price="400"
             />
           </div>
-          <div>
-            <TotalPrice />
-          </div>
+          <CheckoutPrice Coursetitle="陽明山大抱走" Courseprice="500" />
         </div>
       </body>
       <Footer />
