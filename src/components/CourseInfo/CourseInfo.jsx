@@ -22,7 +22,7 @@ const CourseInfo = (props) => {
                                 className=' max-w-md max-h-95 object-fill h-90 max-full  '
                             />
 
-                            <div className='  mt-20 ml-40'>
+                            <div className='  mt-20 '>
 
                                 {/* 類別 */}
                                 <div className='text-left  mb-10 text-gray-500'>
@@ -91,7 +91,7 @@ const CourseInfo = (props) => {
                                 </div>
 
                                 {/* 購買按鈕 */}
-                                <div className="inline-block -mt-3 pt-5 ">
+                                <div className="inline-block -mt-3 pt-0 ">
                                     <button className='group text-white bg-blue-900 hover:bg-blue-700 
                                     focus:ring-blue-700 focus:outline-none focus:ring-4 font-bold 
                                     rounded-full text-xl w-40 h-16 text-center ml-10   '>
