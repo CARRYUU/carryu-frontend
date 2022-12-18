@@ -14,7 +14,7 @@ const CourseInfo = (props) => {
                 <Title pageTitle="課程資訊" />
                 
                     <div>
-                        <div className='flex ml-60 my-10'>
+                        <div className='flex justify-center content-center'>
                             {/* 圖片 */}
                             <img 
                                 src={require("../image/class.jpg")} 
