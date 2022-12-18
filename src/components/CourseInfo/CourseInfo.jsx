@@ -19,7 +19,7 @@ const CourseInfo = (props) => {
                             <img 
                                 src={require("../image/class.jpg")} 
                                 alt="課程圖片"
-                                className=' max-w-md max-h-95 object-fill h-90 max-full  '
+                                className=' max-w-md max-h-90 object-fill rounded-lg   '
                             />
 
                             <div className='  mt-20 '>
