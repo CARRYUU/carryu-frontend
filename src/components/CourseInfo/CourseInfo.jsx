@@ -14,7 +14,7 @@ const CourseInfo = (props) => {
                 <Title pageTitle="課程資訊" />
                 
                     <div>
-                        <div className='flex mx-60 my-10'>
+                        <div className='flex ml-60 my-10'>
                             {/* 圖片 */}
                             <img 
                                 src={require("../image/class.jpg")} 
@@ -33,7 +33,7 @@ const CourseInfo = (props) => {
 
                                 {/* 標題 */}
                                 <div className='inline-block leading-3 '>
-                                    <div className='  text-5xl  font-bold text-black  text-left max-w-md overflow-auto h-20 pt-6 '>
+                                    <div className='  text-5xl  font-bold text-black  text-left max-w-md flex-wrap '>
                                         <h2 className="category">{props.title}
                                             三分鐘笑話速成班   
                                         </h2>
@@ -41,13 +41,13 @@ const CourseInfo = (props) => {
                                 </div>
                         
                                 {/* 觀看人數符號 */}
-                                <div class="inline-block text-red-600 ">
+                                <div className="inline-block text-red-600 ">
                                     <DiCodeigniter size={21}
                                     className='ml-1'/>
                                 </div>
 
                                 {/* 觀看人數 */}
-                                <div class="inline-block">
+                                <div className="inline-block">
                                     <div className=' text-black py-1 max-w-md '>
                                         <p className="students_count">{props.length}
                                         1877
@@ -76,13 +76,13 @@ const CourseInfo = (props) => {
                                 </div>
 
                                 {/* 金錢符號 */}
-                                <div class="inline-block text-amber-500 h-9 ">
+                                <div className="inline-block text-amber-500 h-9 ">
                                     <BsCurrencyDollar size={42}
                                     className='ml-5 mt-0'/>
                                 </div>
 
                                 {/* 課程價錢 */}
-                                <div class="inline-block ">
+                                <div className="inline-block ">
                                     <div className='  text-black text-5xl pt-10  '>
                                         <p className="price">{props.price}
                                         1872
@@ -91,7 +91,7 @@ const CourseInfo = (props) => {
                                 </div>
 
                                 {/* 購買按鈕 */}
-                                <div class="inline-block -mt-3 pt-5 ">
+                                <div className="inline-block -mt-3 pt-5 ">
                                     <button className='group text-white bg-blue-900 hover:bg-blue-700 
                                     focus:ring-blue-700 focus:outline-none focus:ring-4 font-bold 
                                     rounded-full text-xl w-40 h-16 text-center ml-10   '>
